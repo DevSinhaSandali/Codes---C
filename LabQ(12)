@@ -1,0 +1,14 @@
+#include <stdio.h>
+// bitwise And
+int main()
+{
+    int no;
+    printf("Enter the number to be checked :\n");
+    scanf("%d", &no);
+    if ((no & 1) == 0)
+        printf("Number is EVEN \n");
+    else
+        printf("Number is ODD\n");
+
+    return 0;
+}
