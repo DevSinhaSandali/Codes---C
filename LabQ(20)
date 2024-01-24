@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{   int x,y,c;
+    cout<<"Hello World"<<endl;
+    cin>>x>>y;
+    cout<<"the number is"<<endl<<x<<y<<endl;
+    c=x+y;
+    cout<<"the sum is"<<c;
+    
+    return 0;
+}
