@@ -1,0 +1,47 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+struct employee
+{
+
+    char name[30];
+    int id;
+    int age;
+    int salary;
+} p[100];
+int main()
+{
+    int i, n, gross_Salary;
+    cout << "Enter the number of employees: " << endl;
+    cin >> n;
+    for (i = 0; i < n; i++)
+    {
+        cout << "Employee " << i + 1 << endl;
+        cout << "Name: ";
+        cin >> p[i].name;
+        cout << "Id: ";
+        cin >> p[i].id;
+        cout << "Age: ";
+        cin >> p[i].age;
+        cout << "Basic Salary: ";
+        cin >> p[i].salary;
+    }
+    struct employee *ptr;
+    ptr = p;
+    for (i = 0; i < n; i++)
+    {
+        gross_Salary = ptr->salary + (ptr->salary * 0.8) + (ptr->salary * 0.1);
+        ptr++;
+    }
+    ptr = p;
+    cout << "............................." << endl;
+    cout << " Employees Details" << endl;
+    cout << "Name" << setw(10) << "ID" << setw(15) << "Basic salary" << setw(15) << "Gross salary" << endl;
+    for (i = 0; i < n; i++)
+    {
+        cout << ptr->name << setw(10) << ptr->id << setw(15) << ptr->salary << setw(15) << gross_Salary << endl;
+        ptr++;
+    }
+
+    return 0;
+}
