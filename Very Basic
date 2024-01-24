@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void)
+{
+    printf("NAME - SANDALI DEV SINHA\n");
+    printf("FATHER'S NAME - SANJIV KUMAR\n");
+    printf("MOTHER'S NAME - NITIKA SRIVASTAVA\n");
+    printf("SISTER'S NAME - ATIPRIYA DEV SINHA\n");
+    printf("CLASS 10 PERCENTAGE - 94.2 PER CENT\n");
+    printf("CLASS 12 PERCENTAGE - 89.0 PER CENT\n");
+    printf("HOBBIES - READING , WATCHING MOVIES\n");
+
+    return 0;
+}
+
+
