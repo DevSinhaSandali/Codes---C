@@ -1,6 +1,6 @@
 #include <stdio.h> 
 
-int main(void)
+int main(void) 
 {
     printf("NAME - SANDALI DEV SINHA\n");
     printf("FATHER'S NAME - SANJIV KUMAR\n");
