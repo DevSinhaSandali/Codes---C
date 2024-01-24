@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main()
-{
+{ 
     int a[20], i, n, j,b;
     printf("Enter the total number of elements:");
     scanf("%d", &n);
