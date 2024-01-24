@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Process {
+struct Process { 
     int pid,burst_time,remaining_time,arrival_time,waiting_time,turnaround_time;
 }; 
 
