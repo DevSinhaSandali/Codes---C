@@ -2,7 +2,7 @@
 using namespace std;
 int main ()
 {
-    int A[10], n, i, j, x;
+    int A[10], n, i, j, x; 
     cout << "Enter size of array : ";
     cin >> n;
     cout << "Enter elements of array : ";
