@@ -1,0 +1,24 @@
+#include <iostream>
+ 
+using namespace std;
+int pow(int x, int y );
+ 
+int main() {
+    int b, e;
+ 
+    cout << "Enter base and exponent\n";
+    cin >> b >> e;
+ 
+    cout << "Power of a number is :- " << pow(b, e);
+    return 0;
+}
+int pow(int x, int y )
+{
+    int a=1;
+    for(int i=0; i<y ; i++)
+    {
+        a*=x;
+    }
+    return a;
+    
+}
