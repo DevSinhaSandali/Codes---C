@@ -1,7 +1,7 @@
 #include <stdio.h>
 // bitwise And
 int main()
-{
+{ 
     int no;
     printf("Enter the number to be checked :\n");
     scanf("%d", &no);
