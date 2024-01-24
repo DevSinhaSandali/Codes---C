@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+struct subjects
+{
+    int marks;
+} s[5];
+int main()
+{
+    int i, roll;
+    char name[30];
+    cout << "ENTER THE NAME AND ROLL NUMBER OF STUDENT: " << endl;
+    cin >> name >> roll;
+    for (i = 0; i < 5; i++)
+    {
+        cout << "Enter the marks in subject " << i + 1 << endl;
+        cin >> s[i].marks;
+    }
+    cout << "Marks of " << name << ", " << roll << endl;
+    for (i = 0; i < 5; i++)
+    {
+        cout << "Subject " << i + 1 << "=" << s[i].marks << endl;
+    }
+    return 0;
+}
