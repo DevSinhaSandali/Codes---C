@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-struct subjects
+struct subjects 
 {
     int marks;
 } s[5];
