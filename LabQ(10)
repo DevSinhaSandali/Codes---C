@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main()
-{
+{ 
     int a, b, c, d;
     printf("Enter the values of 4 bytes blocks in order: \n");
     scanf("%d%d%d%d", &a, &b, &c, &d);
