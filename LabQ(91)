@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int l, b, ar, perim;
+    l=5;
+    b=8;
+    ar=l*b;
+    perim=2*(l+b);
+    printf("area is %d",ar);
+    printf("\n perimeter is %d",perim);
+    return 0;
+}
+
