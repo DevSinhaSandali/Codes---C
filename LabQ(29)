@@ -1,0 +1,30 @@
+#include <stdio.h>
+struct time
+{
+    int hr;
+    int min;
+    int sec;
+} s448[3];
+int main()
+{
+    int i448;
+    printf("Enter information of TIME:\n");
+    for (i448 = 0; i448 < 3; ++i448)
+    {
+        printf("Enter HOURS: ");
+        scanf("%d", &s448[i448].hr);
+        printf("Enter MINUTES: ");
+        scanf("%d", &s448[i448].min);
+        printf("Enter SECONDS: ");
+        scanf("%d", &s448[i448].sec);
+    }
+    printf("Displaying TIME:\n");
+    for (i448 = 0; i448 < 3; ++i448)
+    {
+        printf("TIME: %d:%d:%d\n", s448[i448].hr, s448[i448].min, s448[i448].sec);
+        printf("\n");
+    }
+    return 0;
+}
+
+
