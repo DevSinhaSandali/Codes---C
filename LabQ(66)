@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int a448[5],i448,c448=0;
+    printf("enter any values between 1 to 20:");
+    for(i448=0;i448<5;i448++)
+    {
+        scanf("%d",&a448[i448]);
+    }
+    for(i448=0;i448<5;i448++)
+    {
+        if(a448[i448]>10)
+        {
+            c448++;
+        }
+        
+    }
+    printf("no. of numbers greater than 10 is %d",c448);
+
+    return 0;
+}
+
