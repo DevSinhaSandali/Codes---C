@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    float a,b,c,sum,avg,largest,smallest;
+    printf("Enter the value of 1st num");
+    scanf("%f",&a);
+    printf("Enter the value of 2nd num"); 
+    scanf("%f",&b);
+    printf("Enter the value of 3rd num");
+    scanf("%f",&c);
+    sum=a+b+c;
+    avg=(a+b+c)/3;
+    largest=a>b?(a>c?a:c):(b>c?b:c);
+    smallest=a<b?(a<c?a:c):(b<c?b:c);
+    printf("\n SUM is %f",sum);
+    printf("\n The average is %f",avg);
+    printf("\n The largest number is %f",largest);
+    printf("\n The smallest number is %f",smallest);
+    return 0;
+}
+
