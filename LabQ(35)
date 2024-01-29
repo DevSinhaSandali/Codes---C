@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int main(){
+    int c448;
+    printf("enter the value of the integer:");
+    scanf("%d",&c448);
+    int *d448=&c448;
+    int**e448=&d448;
+    printf("the value of 'c' is %d\n",c448);
+    printf("the value of d is %x\n",*d448);
+    printf("the value of e is %x\n",**e448);
+    return 0;
+}
