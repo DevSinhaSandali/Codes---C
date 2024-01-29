@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    int i448, j448;
+    for(i448 = 1; i448 <= 4; i448++)
+    {
+        for(j448 = 1; j448 <= i448; j448++)
+        {
+            printf("%d",j448);
+        }
+        printf("\n");
+    }
+    for(i448 = 3; i448 >= 1; i448--)
+    {
+        for(j448 = 1; j448 <= i448; j448++)
+        {
+            printf("%d",j448);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
