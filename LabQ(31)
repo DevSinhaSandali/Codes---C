@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+int  main(void)
+{
+    int *a448 = malloc(sizeof(int));
+    double *b448 = malloc(sizeof(double));
+    char *c448 = malloc(sizeof(char));
+    printf("\nEnter the value of character:");
+    scanf("%c", c448);
+    printf("Enter the value of integel:");
+    scanf("%d", a448);
+    printf("Enter the value of double:");
+    scanf("%lf", b448);
+    printf("\nThe integer is: %d\n", *a448);
+    printf("The double is: %lf\n", *b448);
+    printf("The character is: %c\n", *c448);
+    return 0;
+}
