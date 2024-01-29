@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char st448[20];
+    printf("Enter the string = ");
+    scanf("%s", st448);
+    printf("The entered string = %s\n", st448);
+    int mid = (strlen(st448) - 1) / 2;
+    printf("The ASCII value of it's first character = %d\n", st448[0]);
+    printf("The ASCII value of it's first character = %d\n", st448[mid]);
+    printf("The ASCII value of it's first character = %d\n", st448[strlen(st448) - 1]);
+    return 0;
+}
+
