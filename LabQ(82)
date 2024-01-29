@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    char name448[30];
+    char gender448[30];
+    int rno448;
+    printf("Enter name of student \n");
+    scanf("%[^\n]s",name448);
+    printf("Enter roll no. of student \n");
+    scanf("%d",&rno448);
+    printf("Enter gender of student \n");
+    scanf("%[^\n]s",gender448);
+    printf("Memory occupied by name448 in bytes: %lu \n",sizeof(char));
+    printf("Memory occupied by gender448 in bytes: %lu \n",sizeof(char));
+    printf("Memory occupied by rno448 in bytes: %lu \n",sizeof(char));
+
+    return 0;
+}
+
+
