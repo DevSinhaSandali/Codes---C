@@ -1,0 +1,46 @@
+// WAP to pass a 2-D array in function and transpose it.
+#include <stdio.h>
+#define M448 2
+#define N448 4
+void pass448(int arr[M448][N448])
+{
+    printf("Elements of the array = \n");
+    for (int i448 = 0; i448 < M448; i448++)
+    {
+        for (int j448 = 0; j448 < N448; j448++)
+        {
+            printf("%d", arr[i448][j448]);
+            printf("\t");
+        }
+        printf("\n");
+    }
+}
+void transpose448(int A[][N448], int B[][M448])
+{
+    for (int i448 = 0; i448 < N448; i448++)
+    {
+        for (int j448 = 0; j448 < M448; j448++)
+        {
+            B[i448][j448] = A[j448][i448];
+        }
+    }
+    printf("Result matrix is \n");
+    for (int i448 = 0; i448 < N448; i448++)
+    {
+        for (int j448 = 0; j448 < M448; j448++)
+        {
+            printf("%d ", B[i448][j448]);
+            printf("\t");
+        }
+        printf("\n");
+    }
+}
+int main()
+{
+    int A448[M448][N448] = {{5, 5, 5, 5}, {7, 7, 7, 7}};
+    int B448[N448][M448];
+    pass448(A448);
+    transpose448(A448, B448);
+
+    return 0;
+}
