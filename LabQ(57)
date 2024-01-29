@@ -1,0 +1,22 @@
+#include <stdio.h>
+void avg();
+int main()
+{
+    int n448=5;
+    avg(5);
+    
+    
+    return 0;
+}
+
+void avg(int n448){
+    int k448,avg448,sum448=0;
+    for(int i =1;i<=n448;i++){
+        printf("Enter the number");
+        scanf("%d",&k448);
+        sum448 = sum448+k448;
+    }
+    avg448 = sum448/5;
+    printf("The average is %d",avg448);
+}
+
