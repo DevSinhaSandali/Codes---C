@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char st1_448[] = "Apple";
+    char st2_448[] = "Aeroplane";
+    printf("The strings in dictionary order:- \n");
+    if (strcmp(st1_448, st2_448) == 0)
+    {
+        printf("%s\n%s", st1_448, st2_448);
+    }
+    else if (strcmp(st1_448, st2_448) > 0)
+    {
+        printf("%s\n%s", st2_448, st1_448);
+    }
+    else
+    {
+        printf("%s\n%s", st1_448, st2_448);
+    }
+
+    return 0;
+}
+
