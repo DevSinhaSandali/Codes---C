@@ -1,0 +1,12 @@
+#include <stdio.h>
+struct number
+{
+    int real, image;
+};
+int main()
+{
+    struct number p = {.real = 10, .image = 20};
+    struct number p2 = {.real = 30, .image = 40};
+    printf("The detail of number p =%d | %d", p.real, p.image);
+    printf("The detail of number p2 =%d | %d ", p2.real, p2.image);
+}
