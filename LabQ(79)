@@ -1,0 +1,16 @@
+#include <stdio.h> 
+#include <math.h>
+
+int main()
+{
+    float dr448,sc448,hc448,EOQ448,TBO448;
+    printf("Enter demand rate, setup cost, holding cost \n");
+    scanf("%f %f %f",&dr448,&sc448,&hc448);
+    EOQ448=sqrt((2*dr448*sc448)/hc448);
+    TBO448=sqrt((2*sc448)/(dr448*hc448));
+    printf("EOQ will be %f \n",EOQ448);
+    printf("TBO will be %f",TBO448);
+
+    return 0;
+}
+
