@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    double l, b, ar, perim;
+    l=10.5;
+    b=15.2;
+    ar=l*b;
+    perim=2*(l+b);
+    printf("area is %f",ar);
+    printf("\n perimeter is %f", perim);
+
+    return 0;
+}
+
