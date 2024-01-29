@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int yr;
+    float price, dep, salvalue;
+    printf("enter purchase price, years of service, annual depriciation");
+    scanf("%f %d %f",&price,&yr,&dep);
+    salvalue=price-(dep*yr);
+    printf("The salvage value of the item is %f",salvalue);
+
+    return 0;
+}
+
