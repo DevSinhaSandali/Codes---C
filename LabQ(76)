@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int n448;
+    printf("Enter number");
+    scanf("%d",&n448);
+    if(n448%2==0)
+    {
+        printf("the number %d is even",n448);
+    }
+    if(n448%2==1)
+    {
+        printf("the number %d is odd",n448);
+        
+    }
+
+    return 0;
+}
+
+
