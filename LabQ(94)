@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main(void)
+{
+    printf("         1         \n");
+    printf("     1       1     \n");
+    printf("  1      1       1   \n");
+    printf(" 2  1  0  5  2  4  4  8");
+
+    return 0;
+}
+ 
