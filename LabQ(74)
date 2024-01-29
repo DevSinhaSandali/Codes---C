@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(void)
+{
+    
+    int m448, p448, c448, threesub448, twosub448;
+    printf("Enter marks in Maths");
+    scanf("%d",&m448);
+    printf("Enter marks in Physics");
+    scanf("%d",&p448);
+    printf("Enter marks in Chemistry");
+    scanf("%d",&c448);
+    threesub448 = m448+p448+c448;
+    twosub448 = m448+p448;
+    if(m448>=80 && p448>=50 && c448>=40 && threesub448>=200){
+    printf("Give Admission");
+}
+else if (twosub448 >=150){
+    printf("Give Admission");
+    
+}
+else{
+    printf("Don't Give Admission");
+}
+
+
+    return 0;
+}
+
+
