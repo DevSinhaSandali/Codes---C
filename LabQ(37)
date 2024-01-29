@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    for (int i448 = 1; i448 < 5; i448++)
+    {
+        static int a448 = 5;
+        int b448 = 10;
+        a448++;
+        b448++;
+        printf("The value of a448-static,in iteration %d is %d\n", i448, a448);
+        printf("The value of b448-non static,in iteration %d is %d\n", i448, b448);
+
+        printf("The addition result in iteration-%d + %d = %d\n", i448, a448, b448, a448 + b448);
+    }
+    return 0;
+}
+
+
