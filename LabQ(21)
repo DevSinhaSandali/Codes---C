@@ -1,0 +1,25 @@
+#include <stdio.h>
+# include <string.h>
+# include <stdlib.h>
+
+int main()
+{
+    char c_448[20];
+
+    printf("Enter any word : ");
+    gets(c_448);
+
+   int l = strlen(c_448);
+
+    
+    for(int i=1 ; i<l ; i++)
+    {
+        if("%c"=="%d" , c_448[i] , c_448[i]%2!=0)
+        {
+            printf("Ascii of %d position is %c = %d \n",i, c_448[i] , c_448[i]);
+        }
+    }
+    return 0;
+}
+
+ 
