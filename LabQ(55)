@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int prime(int);
+
+int main()
+{
+    int n448, result448;
+    
+    printf("Enter an integer \n");
+    scanf("%d",&n448);
+    
+    result448 = prime(n448);
+    
+    if ( result448 == 1 )
+     printf("%d is prime.\n",n448);
+   else
+     printf("%d is not prime.\n",n448);
+     
+    return 0;
+}
+
+int prime(int n448)
+{
+    int i;
+    
+    for ( i= 2 ; i <n448 ; i++)
+    {
+        if ( n448%i == 0 )
+        return 0 ;
+    }
+    return 1;
+}
+
