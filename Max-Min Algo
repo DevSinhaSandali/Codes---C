@@ -6,7 +6,7 @@ int main(){
 
 int nT,nM;//number of tasks , number of machines
 printf("\nEnter number of machines and tasks\n");
-scanf("%d%d",&nM,&nT);
+scanf("%d%d",&nM,&nT); 
 
 /*
 Declare a 2d-array of size nM x nT
