@@ -1,0 +1,42 @@
+#include <stdio.h>
+void sort(int n,int array[n]);
+
+int main()
+{
+    int n;
+    printf("how many elts you want to enter: ");
+    scanf("%i",&n);
+    
+    int array[n];
+    for(int i =0;i<n;++i)
+    {
+        printf("enter array[%i] : ",i);
+        scanf("%i",&array[i]);
+        
+    }
+    sort(n,array);
+}
+
+void sort(int n,int array[n])
+{
+    int i,j,temp;
+    
+    for(i = 0;i<n;++i)
+    {
+        for(j=i+1;j<n;++j)
+        {
+            if(array[i] > array[j])
+            {
+                temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
+    }
+    
+    for (i=0;i<n;++i)
+    {
+        printf("array[%i] : %i\n",i,array[i]);
+    }
+}
+    
