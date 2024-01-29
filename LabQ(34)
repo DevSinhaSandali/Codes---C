@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main(void)
+{
+    int a448,b448,add448,sub448,mul448;
+    printf("ENTER THE NUMBER:-");
+    scanf("%d%d",&a448,&b448);
+    
+    int *x448=&a448;
+    int *y448=&b448;
+
+    add448=*x448 + *y448;
+    sub448 = *x448 - *y448;
+    mul448 = (*x448) * (*y448);
+    printf("THE VALUE OF ADDITION: %d\n",add448);
+    printf("THE VALUE OF SUBSTRACTION: %d\n", sub448);
+    printf("THE VALUE OF MULTIPLICATION: %d", mul448);
+    return 0;
+}
