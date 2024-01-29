@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int incmt(int* i448);
+int dcmt(int* j448);
+int main()
+{
+    int a448,b448;
+    printf("Enter the number to be incremented: ");
+    scanf("%d",&a448);
+    printf("Enter the number to be decremented: ");
+    scanf("%d",&b448);
+    
+    int x448=incmt(&a448);
+    int y448=dcmt(&b448);
+    printf("\na after incrementation: %d\n",x448);
+    printf("b after decrementation: %d\n",y448);
+    
+    return 0;
+}
+int incmt(int* i448){
+    int temp= *i448+2;
+    return temp;
+}
+int dcmt(int* j448){
+    int temp=*j448-2;
+    return temp;
+}
+
