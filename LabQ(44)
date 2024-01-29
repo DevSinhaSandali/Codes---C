@@ -1,0 +1,51 @@
+#include <stdio.h>
+void add(int a448, int b448)
+{
+    int x = a448+b448;
+    printf("\nAddition result : %d\n",x);
+}
+void sub(int a448, int b448)
+{
+    int y = a448-b448;
+    printf("Subtraction result : %d\n",y);
+}
+void mul(int a448, int b448)
+{
+    int z = a448*b448;
+    printf("Multiplication result : %d\n",z);
+}
+void divs(int a448, int b448)
+{
+    if(b448 == 0)
+    {
+        printf("Since second integer is 0 division and  modulous function will have error!!!\n");
+        return 0;
+    }
+    float w = a448/b448;
+    printf("Division result : %f\n",w);
+}
+void mods(int a448, int b448)
+{
+    if(b448 == 0)
+    {
+        printf("Since second integer is 0 division and  modulous function will have error!!!");
+        return 0;
+    }
+    float v = a448%b448;
+    printf("Modulous result : %f\n",v);
+}
+int main()
+{
+    int a448, b448;
+    printf("Enter 1st integer : ");
+    scanf("%d",&a448);
+    printf("Enter 2nd integer : ");
+    scanf("%d",&b448);
+    add(a448,b448);
+    sub(a448,b448);
+    mul(a448,b448);
+    divs(a448,b448);
+    mods(a448,b448);
+    return 0;
+}
+
