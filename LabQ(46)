@@ -1,0 +1,29 @@
+#include <stdio.h>
+void mult(int a448, int b448)
+{
+    int m448=a448*b448;
+    printf("The multiplier result : %d\n",m448);
+}
+void div(int* c448, int* d448)
+{
+    float result448=(float)(*c448)/(*d448);
+    printf("The division result : %f\n", result448);
+}
+int main()
+{
+    int x448, y448;
+    printf("Enter 1st integer : ");
+    scanf("%d",&x448);
+    printf("Enter 2nd integer : ");
+    scanf("%d",&y448);
+    if(y448 == 0)
+    {
+        printf("error!!!");
+        return 0;
+    }
+    mult(x448,y448);
+    div(&x448,&y448);
+    return 0;
+}
+
+
