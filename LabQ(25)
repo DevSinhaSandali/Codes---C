@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+union book
+{
+    char name[50];
+    int price;
+    int isbn;
+};
+int main()
+{
+    union book b1448;
+    union book b2448;
+    strcpy(b1448.name, "alchemist");
+    printf("the name of first book is %s\n", b1448.name);
+    strcpy(b2448.name, "programming");
+    printf("the name of second book is %s", b2448.name);
+    return 0;
+}
+
