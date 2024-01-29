@@ -4,7 +4,7 @@
 int main()
 {
     double x448,y448,X448,Y448,D448;
-    printf("Enter coordinates of first point \n");
+    printf("Enter coordinates of first point \n"); 
     scanf("%lf %lf",&x448,&y448);
     printf("Enter coordinates of second point \n");
     scanf("%lf %lf",&X448,&Y448);
