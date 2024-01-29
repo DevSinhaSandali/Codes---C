@@ -1,0 +1,39 @@
+#include <stdio.h>
+struct student
+{
+    char firstName[50];
+    int age;
+    char gender[50];
+    char section[50];
+    int roll;
+} s448[3];
+int main()
+{
+    int i448;
+    printf("Enter information of students:\n");
+    for (i448 = 0; i448 < 3; ++i448)
+    {
+        printf("Enter first name: ");
+        scanf("%s", s448[i448].firstName);
+        printf("Enter roll number: ");
+        scanf("%d", &s448[i448].roll);
+        printf("Enter age: ");
+        scanf("%d", &s448[i448].age);
+        printf("Enter gender: ");
+        scanf("%s", s448[i448].gender);
+        printf("Enter section: ");
+        scanf("%s",s448[i448].section);
+    }
+    printf("Displaying Information:\n");
+    for (i448 = 0; i448 < 3; ++i448)
+    {
+        printf("First name:%s\n",s448[i448].firstName);
+        printf("Roll number: %d\n", s448[i448].roll);
+        printf("Age: %d\n", s448[i448].age);
+        printf("Gender: %s\n", s448[i448].gender);
+        printf("Section: %s\n", s448[i448].section);
+        printf("\n");
+    }
+    return 0;
+}
+
