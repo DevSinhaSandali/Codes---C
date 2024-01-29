@@ -1,0 +1,21 @@
+#include <stdio.h>
+int add(int);
+int main(void)
+{
+    int n448;
+    printf("Enter a number: ");
+    scanf("%d",&n448);
+    printf("Sum: %d",add(n448));
+    return 0;
+}
+int add(int n448)
+{
+    if (n448!=0)
+    {
+        return n448+add(n448-1);
+    }
+    else
+    {
+        return n448;
+    }
+}
