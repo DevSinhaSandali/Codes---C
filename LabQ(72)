@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+int main(void)
+{
+    char choice448;
+    char name448[20];
+    int age448;
+    do
+    {
+        printf("Select 'Y' or 'N' :- ");
+        scanf("%c", &choice448);
+        if (choice448 == 'Y')
+        {
+            printf("Enter Your Name :- ");
+            scanf("%s",name448);
+            printf("Enter Your Age :- ");
+            scanf("%d", &age448);
+            printf("Name - %s\n",name448);
+            printf("Age - %d\n",age448);
+        }
+    } while (choice448 != 'N');
+}
+
