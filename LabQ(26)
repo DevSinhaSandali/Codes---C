@@ -1,0 +1,12 @@
+#include <stdio.h>
+enum subject{Math,Chemsitry,Physics,Graphics,Communication};
+int main()
+{
+    int i;
+    for (i=Math; i <= Communication; i++)
+    {
+        printf("%d ", i);
+    }
+    return 0;
+}
+
