@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("BIODATA");
+    biodata();
+
+    return 0;
+}
+
+void biodata(){
+    char s448[10];
+    int n448;
+    int f448[10];
+    printf("Enter your name:");
+    scanf("%s\n",&s448);
+    printf("Your Phone Number");
+    scanf("%s\n",&n448);
+    printf("Enter your Father's Name");
+    scanf("%s\n",&f448);
+}
+
