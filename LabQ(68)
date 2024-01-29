@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+    int a463,sum463=0,remainder463;
+    
+    printf("enter the number to be checked for perfect number ");
+    scanf(" %d",&a463);
+    if(a463!=0)
+    {
+        for(int i463=1;i463<a463;i463=i463+1)
+        {
+            remainder463=a463%i463;
+            if(remainder463==0)
+            {
+                sum463 = sum463+i463;
+            }
+        }
+        if (sum463=a463)
+        printf("number is perfect number");
+        else
+         printf("number is perfect number");
+    }
+    else
+    printf("number is zero");
+
+
+    return 0;
+}
+
