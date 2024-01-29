@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char st448[100];
+    int upper448 = 0, lower448= 0;
+
+    printf("\nEnter The String = ");
+    gets(st448);
+    printf("\nEntered String = %s", st448);
+
+    for (int i = 0; st448[i] != 0; i++)
+    {
+        if (st448[i] >= 'A' && st448[i] <= 'Z')
+        {
+            upper448++;
+        }
+        else if (st448[i] >= 'a' && st448[i] <= 'z')
+        {
+            lower448++;
+        }
+    }
+
+    printf("\nUppercase alphabets  %d", upper448);
+    printf("\nLowercase alphabets  %d", lower448);
+
+    return 0;
+}
+
