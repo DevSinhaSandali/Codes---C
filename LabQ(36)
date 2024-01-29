@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main ()
+{
+    int a448;
+    float b448;
+    int* c448=&a448 ;
+    float* d448=&b448 ;
+    a448=7;
+    b448=45.877602;
+    printf("Value of a : %d \n", *&a448);
+    printf("Value of b : %f \n", *&b448);
+    printf("Address of a : %d \n", &a448);
+    printf("Address of b : %d \n", &b448);
+    return 0;
+}
