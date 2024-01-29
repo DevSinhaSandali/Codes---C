@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void)
+{
+    float a,b,c,d,e,total;
+    printf("Enter the marks of subject one\n ");
+    scanf("%lf",&a);
+    printf("Enter the marks of subject two\n ");
+    scanf("%lf",&b);
+    printf("Enter the marks of subject three\n ");
+    scanf("%lf",&c);
+    printf("Enter the marks of subject four\n ");
+    scanf("%lf",&d);
+    printf("Enter the marks of subject five\n ");
+    scanf("%lf",&e);
+    total=(a+b+c+d+e);
+    printf("Total marks is %lf",total);
+    
+
+    return 0;
+}
