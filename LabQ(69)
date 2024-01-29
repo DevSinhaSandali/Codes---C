@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main(void)
+{
+    int num448,orgnum448,rem448,result448 = 0;
+    printf("Enter 3 digit integer: ");
+    scanf("%d",&num448);
+    orgnum448 = num448;
+    
+    while (orgnum448 != 0)
+    {
+        
+        rem448 = orgnum448 % 10;
+        
+        result448+= rem448*rem448*rem448;
+        
+       
+       orgnum448 /= 10; 
+    }
+    
+    if (result448 == num448)
+       printf("%d is an Armstrong number.",num448);
+    else
+       printf("%d is not an armstrong number.",num448);
+
+    return 0;
+}
