@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void)
+{
+    char a448[50],b448[50],c448[50];
+int A448, B448, C448,total;
+printf("First item and it's price ");
+scanf("%s%d",a448,&A448);
+printf("Second item and it's price ");
+scanf("%s%d",b448,&B448);
+printf("Third item and it's price ");
+scanf("%s%d",c448,&C448);
+printf("Items are\n%s %d\n%s %d\n%s %d"
+,a448,A448,b448,B448,c448,C448);
+total=A448+B448+C448;
+printf("\nYour Total: %d",total);
+
+    return 0;
+}
+
