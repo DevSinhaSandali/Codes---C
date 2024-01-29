@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    double a448,b448,c448,d448,m448,n448,x1448,x2448;
+    printf("Enter values of a,b,c,d,m and n for two sets of linear equations");
+    scanf("%lf %lf %lf %lf %lf %lf",&a448,&b448,&c448,&d448,&m448,&n448);
+    if(((a448*d448)-(c448*b448))==0)
+    {
+        printf("Values of x1 & x2 cannot be calculated");
+    }
+    else
+    {
+        x1448=((m448*d448)-(b448*n448))/((a448*d448)-(c448*b448));
+        x2448=((n448*a448)-(m448*c448))/((a448*d448)-(c448*b448));
+        printf("value of x1 is %lf",x1448);
+        printf("\n the value of x2 is %lf",x2448);
+    }
+
+    return 0;
+}
+
