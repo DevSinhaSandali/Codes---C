@@ -1,0 +1,35 @@
+#include <stdio.h>
+int main()
+{
+    char line448[150],count=0,x,a,rev[100];
+    printf("Enter a string: ");
+    scanf("%s",line448);
+    for (int i = 0, j; line448[i] != '\0'; ++i)
+    {
+        while (!(line448[i] >= 'a' && line448[i] <= 'z') && !(line448[i] >= 'A' && line448[i] <= 'Z') && !(line448[i] == '\0'))
+        {
+            for (j = i; line448[j] != '\0'; ++j)
+            {
+                line448[j] = line448[j + 1];
+            }
+            line448[j] = '\0';
+        }
+    }
+    printf("Output String: ");
+    puts(line448);
+    while (line448[count] != '\0')
+    {
+        count++;
+    }
+    x = count - 1;
+    for (a = 0; a < count; a++)
+    {
+        rev[a] = line448[x];
+        x--;
+    }
+    printf("\nString After Reverse: %s", rev);
+    return 0;
+}
+
+
+
