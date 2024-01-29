@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(void) 
+{
+    int n448, i448;
+    for (n448 = 5; n448 <= 10; n448++) 
+    {
+      printf("Table of %d:\t", n448);
+      for(i448=1;i448<=10;i448++)
+      {
+        printf("%d x %d = %d\t", n448, i448, n448 * i448);
+      }
+      printf("\n");
+    }
+    return 0;
+}
+
