@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+#define pi 3.14
+
+int main()
+{
+    double r448,h448,SA448;
+    printf("Enter radius of given cylinder \n");
+    scanf("%lf",&r448);
+    printf("Enter the height of given cylinder \n");
+    scanf("%lf",&h448);
+    SA448=2*pi*r448*h448;
+    
+    printf("Surface Area of given cylinder is=%f",SA448);
+
+
+    return 0;
+}
+
