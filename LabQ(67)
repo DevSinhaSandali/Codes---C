@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int a461,i461;
+    for(i461=0;i461<=9;i461++)
+    {
+    printf("Enter the age\n");
+    scanf("%d",&a461);
+    
+    if(a461>=60)
+    {
+    printf("Person is senior citizen\n");
+    }
+    else
+    printf("Person is notsenior citizen\n");
+    }
+    return 0;
+}
