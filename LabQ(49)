@@ -1,0 +1,24 @@
+#include <stdio.h>
+void incmt(int a448)
+{
+    a448 = a448+2;
+    printf("Value of a after incrementation is: %d\n",a448);
+}
+
+void dcmt(int b448)
+{
+    b448 = b448-2;
+    printf("Value of b after decrementation is: %d\n",b448);
+}
+int main()
+{
+    int a448,b448;
+    printf("Enter the value of a and b respectively:- \n");
+    scanf("%d %d",&a448, &b448);
+    incmt(a448);
+    dcmt(b448);
+    printf("Original value of a is: %d \nOriginal value of b is: %d", a448, b448);
+    return 0;
+}
+
+
