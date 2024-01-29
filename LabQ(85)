@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include<math.h>
+
+int main()
+{
+    double a448,b448,c448,S448,A448;
+    
+    printf("Enter value of a448 \n");
+    scanf("%lf",&a448);
+    printf("Enter value of b448 \n");
+    scanf("%lf",&b448);
+    printf("Enter value of c448 \n");
+    scanf("%lf",&c448);
+    S448=(a448+b448+c448)/2;
+    A448=sqrt(S448*(S448-a448)*(S448-b448)*(S448-c448));
+    
+    printf("Area of the triangle=%f",A448);
+    
+
+    return 0;
+}
+
